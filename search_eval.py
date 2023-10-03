@@ -13,6 +13,7 @@ def load_ranker(cfg_file):
     """
     #return metapy.index.OkapiBM25()
     return metapy.index.OkapiBM25(1, 0.75, 100)
+    
 
 if __name__ == '__main__':
     if len(sys.argv) != 2:
