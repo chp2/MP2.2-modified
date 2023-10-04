@@ -54,6 +54,11 @@ if __name__ == '__main__':
             ndcg += ev.ndcg(results, query_start + query_num, top_k)
             num_queries+=1
     ndcg= ndcg / num_queries
-            
+
+
+
+
+
+    
     print("NDCG@{}: {}".format(top_k, ndcg))
     print("Elapsed: {} seconds".format(round(time.time() - start_time, 4)))
